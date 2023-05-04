@@ -25,4 +25,16 @@ public class HelloControllerTest {
 				.andExpect(status().isOk())
 				.andExpect(content().string(hello));
 	}
+
+	public static class HelloControllerDtoTest {
+
+		@Test
+		public void 롬복_기능_테스트() {
+			//given
+			String name = "test";
+			int amount = 1000;
+
+			//when
+		}
+	}
 }
