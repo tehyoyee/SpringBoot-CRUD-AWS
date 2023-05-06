@@ -1,6 +1,9 @@
 package springboot.web.dto;
 
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class HelloResponseDtoTest {
 
@@ -11,9 +14,10 @@ public class HelloResponseDtoTest {
 		int amount = 1000;
 
 		//when
-		HelloResponseDtoTest dto = new HelloResponseDtoTest(name, amount);
+		HelloResponseDto dto = new HelloResponseDto(name, amount);
 
 		//then
-		
+		assertThat(dto.getName()).isEqualTo(name);
+		assertThat(dto.getAmount()).isEqualTo(amount);
 	}
 }
