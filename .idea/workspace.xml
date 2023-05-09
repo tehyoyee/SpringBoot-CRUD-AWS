@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9c133ae-393d-4e23-8e7e-ad4c55a3523c" name="변경" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/main/java/springboot/service/PostsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springboot/web/PostsApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springboot/web/PostsResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springboot/web/dto/PostsSaveRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springboot/web/dto/PostsUpdateRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/springboot/web/dto/PostsApiControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springboot/domain/BaseTimeEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springboot/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/springboot/domain/posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springboot/domain/posts/Posts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/springboot/web/domain/posts/PostsRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/springboot/web/domain/posts/PostsRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +91,6 @@
   <component name="ProjectId" id="2P06Z3Rh7E9j4vA3wqcS12yez45" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
@@ -122,7 +117,7 @@
       <recent name="springboot.web" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.Application">
+  <component name="RunManager" selected="JUnit.PostsRepositoryTest.BaseTimeEntity_등록">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="springboot.Application" />
       <module name="SpringBootWeb.main" />
@@ -168,7 +163,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostsRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PostsRepositoryTest.BaseTimeEntity_등록" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootWeb.test" />
       <extension name="coverage">
         <pattern>
@@ -178,7 +173,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="springboot.web.domain.posts" />
       <option name="MAIN_CLASS_NAME" value="springboot.web.domain.posts.PostsRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="BaseTimeEntity_등록" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -201,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PostsRepositoryTest.BaseTimeEntity_등록" />
         <item itemvalue="애플리케이션.Application" />
         <item itemvalue="JUnit.PostsApiControllerTest.Posts_수정된다" />
         <item itemvalue="JUnit.PostsApiControllerTest.Posts_등록된다" />
         <item itemvalue="JUnit.PostsRepositoryTest.게시글저장_불러오기" />
-        <item itemvalue="JUnit.PostsRepositoryTest" />
       </list>
     </recent_temporary>
   </component>

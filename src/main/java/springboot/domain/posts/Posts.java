@@ -3,6 +3,7 @@ package springboot.domain.posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import springboot.domain.BaseTimeEntity;
 
 import javax.persistence.*;
 
@@ -11,7 +12,7 @@ import javax.persistence.*;
 @Entity     // JPA 어노테이션
 // Post 클래스는 DB 테이블과 매칭될 클래스 ; 엔티티 클래스라 칭함.
 // JPA는 실제 쿼리보다는 이 Entity 클래스의 수정을 통해 작업.
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
 	@Id     // 테이블의 PK 필드
 	@GeneratedValue(strategy = GenerationType.IDENTITY)     // auto_increment설정
