@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9c133ae-393d-4e23-8e7e-ad4c55a3523c" name="변경" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/main/java/springboot/domain/posts/Posts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springboot/domain/posts/PostsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/springboot/web/domain/posts/PostsRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springboot/service/PostsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springboot/web/PostsApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springboot/web/PostsResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springboot/web/dto/PostsSaveRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springboot/web/dto/PostsUpdateRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/springboot/web/dto/PostsApiControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springboot/domain/posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springboot/domain/posts/Posts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,19 +98,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "last_opened_file_path": "C:/Users/Taehyeong/intelliJ/SpringBootWeb",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.5241379",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Taehyeong/intelliJ/SpringBootWeb&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.5241379&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -119,40 +122,21 @@
       <recent name="springboot.web" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PostsRepositoryTest.게시글저장_불러오기">
-    <configuration name="HelloControllerTest.helloDto가_리턴된다" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootWeb.test" />
+  <component name="RunManager" selected="애플리케이션.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="springboot.Application" />
+      <module name="SpringBootWeb.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springboot.web.*" />
+          <option name="PATTERN" value="springboot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="springboot.web" />
-      <option name="MAIN_CLASS_NAME" value="springboot.web.HelloControllerTest" />
-      <option name="METHOD_NAME" value="helloDto가_리턴된다" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloControllerTest.hello가_리턴된다" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootWeb.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springboot.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="springboot.web" />
-      <option name="MAIN_CLASS_NAME" value="springboot.web.HelloControllerTest" />
-      <option name="METHOD_NAME" value="hello가_리턴된다" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloResponseDtoTest.롬복_기능_테스트" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PostsApiControllerTest.Posts_등록된다" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootWeb.test" />
       <extension name="coverage">
         <pattern>
@@ -161,8 +145,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="springboot.web.dto" />
-      <option name="MAIN_CLASS_NAME" value="springboot.web.dto.HelloResponseDtoTest" />
-      <option name="METHOD_NAME" value="롬복_기능_테스트" />
+      <option name="MAIN_CLASS_NAME" value="springboot.web.dto.PostsApiControllerTest" />
+      <option name="METHOD_NAME" value="Posts_등록된다" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostsApiControllerTest.Posts_수정된다" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootWeb.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springboot.web.dto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springboot.web.dto" />
+      <option name="MAIN_CLASS_NAME" value="springboot.web.dto.PostsApiControllerTest" />
+      <option name="METHOD_NAME" value="Posts_수정된다" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -201,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Application" />
+        <item itemvalue="JUnit.PostsApiControllerTest.Posts_수정된다" />
+        <item itemvalue="JUnit.PostsApiControllerTest.Posts_등록된다" />
         <item itemvalue="JUnit.PostsRepositoryTest.게시글저장_불러오기" />
         <item itemvalue="JUnit.PostsRepositoryTest" />
-        <item itemvalue="JUnit.HelloControllerTest.helloDto가_리턴된다" />
-        <item itemvalue="JUnit.HelloResponseDtoTest.롬복_기능_테스트" />
-        <item itemvalue="JUnit.HelloControllerTest.hello가_리턴된다" />
       </list>
     </recent_temporary>
   </component>
