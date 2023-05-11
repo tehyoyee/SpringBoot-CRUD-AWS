@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import springboot.config.auth.LoginUser;
 import springboot.config.auth.dto.SessionUser;
 import springboot.service.PostsService;
 import springboot.web.dto.PostsResponseDto;
@@ -16,12 +17,15 @@ import javax.servlet.http.HttpSession;
 public class IndexController {
 
 	private final PostsService postsService;
-	private final HttpSession httpSession;
+//	private final HttpSession httpSession;
 
+	
+	// @LoginUser로 기존의 httpSession.getAttribute("user")로 가져오던 세션 정보값이 개선되었다
+	// 어느 컨트롤러든지 @LoginUser만 사용하면 세션 정보를 가져올 수 있다
 	@GetMapping("/")
-	public String index(Model model) {
+	public String index(Model model, @LoginUser SessionUser user) {
 		model.addAttribute("posts", postsService.findallDesc());
-		SessionUser user = (SessionUser) httpSession.getAttribute("user");
+//		SessionUser user = (SessionUser) httpSession.getAttribute("user");
 		// CustomOAuth2UserService에서 로그인 성공시 세션에 SessionUser를 저장
 		// 로그인 성공시 httpSession.getAttribute("user")에서 값을 가져올 수 있다
 		if (user != null) {
