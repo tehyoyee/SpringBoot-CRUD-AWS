@@ -1,11 +1,11 @@
 package springboot.web.domain.posts;
 
-import org.junit.After;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import springboot.domain.posts.Posts;
 import springboot.domain.posts.PostsRepository;
 
@@ -14,14 +14,14 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
 
-@RunWith(SpringRunner.class)
+@ExtendWith(SpringExtension.class)
 @SpringBootTest     // 별다른 설정이 없으면 h2 데이터베이스를 자동으로 실행
 public class PostsRepositoryTest {
 
 	@Autowired
 	PostsRepository postsRepository;
 
-	@After      // 끌날 때 수행하는 메소드; 테스트간 간섭을 줄이기위해 데이트삭제용 메소드
+	@AfterEach      // 끌날 때 수행하는 메소드; 테스트간 간섭을 줄이기위해 데이트삭제용 메소드
 	public void cleanup() {
 		postsRepository.deleteAll();
 	}
