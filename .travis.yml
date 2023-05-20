@@ -20,7 +20,7 @@ script: "./gradlew clean build"
 before_deploy:
   - zip -r tehyoyee-springboot
   - mkdir -p deploy
-  - mv tehyoyee-springboot.zip deploy/tehyoyee-springboot-zip
+  - mv tehyoyee-springboot.zip deploy/tehyoyee-springboot.zip
 
 deploy: # S3로 파일업로드 혹은 CodeDeploy로 배포 등 외부서비스와 연동내용을 선언
   - provider: s3
