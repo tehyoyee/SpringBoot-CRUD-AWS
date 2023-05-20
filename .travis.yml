@@ -17,10 +17,19 @@ before_install:
 
 script: "./gradlew clean build"
 
+#before_deploy:
+#  - zip -r tehyoyee-springboot *
+#  - mkdir -p deploy
+#  - mv tehyoyee-springboot.zip deploy/tehyoyee-springboot.zip
 before_deploy:
-  - zip -r tehyoyee-springboot *
-  - mkdir -p deploy
-  - mv tehyoyee-springboot.zip deploy/tehyoyee-springboot.zip
+  - mkdir -p before-deploy # 디렉토리 단위로만 업로드할 수 있기 때문에 deploy 디렉토리를 항상 생성
+  - cp scripts/*.sh before-deploy/ # zip파일에 포함시킬 파일들을 저장
+  - cp appspec.yml before-deploy/
+  - cp build/libs/*.jar before-deploy/
+  - cd before-deploy && zip -r before-deploy * # before-deploy로 이동 후 전체 압축
+  - cd ../ && mkdir -p deploy # 상위 디렉토리로 이동 후 deploy 디렉토리 생성
+  - mv before-deploy/before-deploy.zip deploy/tehyoyee-springboot.zip
+
 
 deploy: # S3로 파일업로드 혹은 CodeDeploy로 배포 등 외부서비스와 연동내용을 선언
   - provider: s3
