@@ -18,7 +18,7 @@ before_install:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r tehyoyee-springboot
+  - zip -r tehyoyee-springboot *
   - mkdir -p deploy
   - mv tehyoyee-springboot.zip deploy/tehyoyee-springboot.zip
 
