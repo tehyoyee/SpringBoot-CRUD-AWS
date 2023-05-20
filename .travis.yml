@@ -26,6 +26,7 @@ deploy: # S3로 파일업로드 혹은 CodeDeploy로 배포 등 외부서비스�
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY # Travis repo settings
     secret_access_key: $AWS_SECRET_KEY # Travis repo settings
+
     bucket: tehyoyee-springboot-build # S3 버킷
     region: ap-northeast-2
     skip_cleanup: true
