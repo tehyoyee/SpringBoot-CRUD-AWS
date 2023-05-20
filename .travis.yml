@@ -1,5 +1,4 @@
 language: java
-
 jdk:
   - openjdk8
 
@@ -17,6 +16,22 @@ before_install:
   - chmod +x gradlew
 
 script: "./gradlew clean build"
+
+before_deploy:
+  - zip -r tehyoyee-springboot
+  - mkdir -p deploy
+  - mv tehyoyee-springboot.zip deploy/tehyoyee-springboot-zip
+
+deploy: # S3로 파일업로드 혹은 CodeDeploy로 배포 등 외부서비스와 연동내용을 선언
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY # Travis repo settings
+    secret_access_key: $AWS_SECRET_KEY # Travis repo settings
+    bucket: tehyoyee-springboot-build # S3 버킷
+    region: ap-northeast-2
+    skip_cleanup: true
+    acl: private # zip 파일 접근을 private으로
+    local_dir: deploy # before_deploy에서 생성한 디렉토리 여기 위치의 파일들만 S3로 전송
+    wait-until-deployed: true
 
 # CI 실행 완료시 메일로 열람
 notifications:
