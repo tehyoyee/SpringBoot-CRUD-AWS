@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9c133ae-393d-4e23-8e7e-ad4c55a3523c" name="변경" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/main/java/springboot/web/ProfileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/springboot/web/ProfileControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/springboot/web/ProfileControllerUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +115,7 @@
       <recent name="springboot.web" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProfileControllerUnitTest">
+  <component name="RunManager" selected="애플리케이션.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="springboot.Application" />
       <module name="SpringBootWeb.main" />
@@ -152,7 +150,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="IndexControllerTest.메인페이지_로딩" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileControllerTest.profile은_인증없이_호출된다" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootWeb.test" />
       <extension name="coverage">
         <pattern>
@@ -161,8 +159,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="springboot.web" />
-      <option name="MAIN_CLASS_NAME" value="springboot.web.IndexControllerTest" />
-      <option name="METHOD_NAME" value="메인페이지_로딩" />
+      <option name="MAIN_CLASS_NAME" value="springboot.web.ProfileControllerTest" />
+      <option name="METHOD_NAME" value="profile은_인증없이_호출된다" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -201,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Application" />
+        <item itemvalue="JUnit.ProfileControllerTest.profile은_인증없이_호출된다" />
         <item itemvalue="JUnit.ProfileControllerUnitTest" />
         <item itemvalue="JUnit.ProfileControllerUnitTest.real_profile이_조회된다" />
         <item itemvalue="Gradle.SpringBootWeb [test]" />
-        <item itemvalue="JUnit.IndexControllerTest.메인페이지_로딩" />
-        <item itemvalue="애플리케이션.Application" />
       </list>
     </recent_temporary>
   </component>
