@@ -7,7 +7,8 @@ http://ec2-3-39-151-118.ap-northeast-2.compute.amazonaws.com/
 #### Backend
 
 Spring-Boot
-Spring-Security
+Spring-Security Oauth2.0
+Spring-Data
 <br>
 
 #### Frontend
