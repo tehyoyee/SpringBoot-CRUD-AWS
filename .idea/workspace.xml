@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9c133ae-393d-4e23-8e7e-ad4c55a3523c" name="변경" comment="initial">
-      <change afterPath="$PROJECT_DIR$/scripts/health.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/profile.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/stop.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/switch.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-real1.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-real2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appspec.yml" beforeDir="false" afterPath="$PROJECT_DIR$/appspec.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/deploy.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
