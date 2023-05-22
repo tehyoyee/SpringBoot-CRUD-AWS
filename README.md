@@ -16,7 +16,7 @@ HTML  CSS  Javascript  Bootstrap
 
 #### DevOps
 
-AWS-EC2  AWS-RDS  AWS-CodeDeploy  AWS-S3
+Travis CI   AWS-EC2   AWS-RDS   AWS-CodeDeploy   AWS-S3
 <br>
 
 #### RDBMS
